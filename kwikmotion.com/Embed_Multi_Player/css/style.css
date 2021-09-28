@@ -1,0 +1,144 @@
+/* Modal Content */
+
+.meme-image {
+	display: inline-block;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 3px;
+	width: 12.5%;
+	height: auto;
+	outline: 0;
+	border: none;
+	line-height: 0;
+}
+
+/* Responsive Modal grid */
+
+@media (min-width: 1300px) {
+	.meme-image {
+		width: 12.5%;
+	}
+}
+
+@media (min-width: 980px) and (max-width: 1299px) {
+	.meme-image {
+		width: 20%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	.meme-image {
+		width: 25%;
+	}
+}
+
+@media (max-width: 767px) {
+	.meme-image {
+		width: 33.3%;
+	}
+}
+
+.meme-image-wrapper {
+	display: inline-block;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 6px;
+	width: 100%;
+	height: auto;
+	outline: 0;
+	border: none;
+	line-height: 0;
+	cursor: pointer;
+}
+
+#meme-image-grid {
+	margin: 0;
+	padding: 8px;
+	background: #f5f5f5;
+}
+
+#meme-image-grid li:active,
+.modal-inner a:active {
+	outline: 0;
+}
+
+#meme-image-grid img {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	border: none;
+	border: 1px solid #fff;
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
+}
+
+.meme-image.selected .meme-image-wrapper {
+	background: #1484b5;
+}
+
+.meme-image.selected img {
+	opacity: .5;
+}
+
+.semantic-content footer,
+#modal-label {
+	position: relative;
+	z-index: 100;
+}
+
+#modal-label {
+	display: block;
+	height: 60px;
+	background: #fff;
+	box-shadow: 0 4px 4px -4px rgba(0,0,0,0.1);
+	line-height: 60px;
+}
+
+.semantic-content .modal-content {
+	border: none;
+}
+
+.semantic-content header {
+	border: none;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+#modal-label h3 {
+	margin: 2px 0 0 0;
+	padding: 0 8px;
+	color: rgb(51, 51, 51);
+	font-weight: 200;
+	font-size: 22px;
+}
+
+.semantic-content footer {
+	padding: 16px;
+	border: none;
+	border-top: 1px solid #dfdfdf !important;
+	background: #fff;
+	box-shadow: 0 -4px 4px -4px rgba(0,0,0,0.1);
+	text-align: right;
+}
+
+.modal-inner .button-large {
+	padding: 0 12px;
+	height: 30px;
+	line-height: 30px;
+}
+
+/* Modal Fix */
+
+.semantic-content .modal-close::after {
+	top: 30px;
+}
+
+/* Add Image Button */
+
+#add_image span {
+	display: inline-block;
+	margin-right: 6px;
+	margin-bottom: -4px;
+	width: 16px;
+	height: 16px;
+}

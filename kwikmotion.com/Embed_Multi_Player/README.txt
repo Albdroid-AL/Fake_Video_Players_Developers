@@ -1,0 +1,1 @@
+OPEN player_loader.js AND SET PATH TO /packages/ FOLDER

@@ -1,0 +1,90 @@
+/* a wrapper element that tracks the mouse vertically */
+.vjs-thumbnail-holder {
+    position: absolute;
+    overflow: hidden;
+    left: -1000px;
+    z-index: 10;
+    bottom: 2.5em;
+    height: 100px !important;
+    /*-webkit-box-shadow: 10px 10px 18px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 18px -5px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 18px -5px rgba(0,0,0,0.75);*/
+}
+    
+.vjs-mouse-display {
+    z-index: 11 !important;
+}
+.vjs-all-thumbnail-holder {
+    position: absolute;
+    overflow: hidden;    
+    bottom: 3em;
+    background-color: rgba(0, 0, 0, 0.50);
+    left:0;
+    right:0;
+    height:0px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .5s ease;
+    -webkit-transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -mz-transition: opacity .5s ease;
+}
+.vjs-all-thumbnail-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+.vjs-small-thumbnail {
+    margin: 3px;
+    width: 93px;
+    height: 65px;
+    margin-bottom: 19px;
+    display:inline;
+}
+.vjs-selected-thumbnail {
+    width: 137px;
+    height: 100px;
+    border: 2px solid white;
+    margin: 2px;
+    transition:  .5s ease;
+    display:inline;
+}
+
+/* the thumbnail image itself */
+.vjs-thumbnail {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity .2s ease;
+    -webkit-transition: opacity .2s ease;
+    -moz-transition: opacity .2s ease;
+    -mz-transition: opacity .2s ease;
+}
+
+/* fade in the thumbnail when hovering over the progress bar */
+/* .fake-active is needed for Android only. It's removed on touchend/touchecancel */
+.vjs-progress-control:hover .vjs-thumbnail,
+.vjs-progress-control.fake-active .vjs-thumbnail,
+.vjs-progress-control:active .vjs-thumbnail {
+  opacity: 1;
+}
+
+/* ... but hide the thumbnail when hovering directly over it */
+/*.vjs-progress-control:hover .vjs-thumbnail:hover,
+.vjs-progress-control:active .vjs-thumbnail:active {
+  opacity: 0;
+}*/
+
+.vjs-control-bar-show {
+    visibility:visible!important;
+    opacity:1!important;
+}
+
+.vjs-volume-control {
+    z-index:20;
+}
+.vjs-menu{
+    z-index:100;
+}
