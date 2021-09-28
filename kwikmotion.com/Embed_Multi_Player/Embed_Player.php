@@ -8,13 +8,14 @@
     
 BEFORE TO CHANGE PLAYER TYPES SET STREAM URLS
 JWPLAYER IS AS DEFAULT
+IF PLAYER IS bitdash MODE AS DEFAULT PLAYING MPD STREAM, IF YOU WANT TO PLAY HLS LEAVE EMPTY $mpd_url & $manifest_url INPUT ONLY M3U8 SOURCE
 */
 $Player_Type = "jwplayer"; // SET PLAYER
 
 $image_url = "https://png.kodi.al/tv/albdroid/black.png";
 $hls_url = "https://abr.de1se01.v2beat.live/playlist.m3u8";
-$mpd_url = ""; // MPD URL
 
+$mpd_url = ""; // MPD URL
 $manifest_url = ""; // smil/Manifest URL
 
 $vtt_url = ""; // vtt URL
@@ -154,7 +155,7 @@ function playVideo(AutoStart, Mute) {
 
             source: {
                 hls: "<?php echo $hls_url; ?>",
-                //dash: "<?php echo $mpd_url; ?>",
+                dash: "<?php echo $mpd_url; ?>",
                 poster: "<?php echo $image_url; ?>",
                 tracks: [
 				{
