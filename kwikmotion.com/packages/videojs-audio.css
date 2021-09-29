@@ -1,0 +1,35 @@
+/* Audio: https://github.com/videojs/video.js/issues/2777 */
+
+/* Audio: Remove big play button (leave only the button in controls). */
+.video-js.vjs-audio .vjs-big-play-button {
+  display: none;
+}
+/* Audio: Make the controlbar visible by default */
+.video-js.vjs-audio .vjs-control-bar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* Make player height minimum to the controls height so when we hide video/poster area the controls are displayed correctly. */
+.video-js.vjs-audio {
+  min-height: 3em;
+  max-height: 3em;
+}
+.video-js.vjs-audio .vjs-poster {
+	display: none;
+}
+.video-js.vjs-audio .vjs-volume-panel { order: 2;}
+.video-js.vjs-audio .vjs-volume-panel {
+  width: 10em!important;
+}
+.video-js.vjs-audio .vjs-volume-panel .vjs-volume-control {
+  opacity: 1;
+  width: 5em;
+  height: 3em;
+  position: relative;
+  
+}
+.video-js.vjs-audio .vjs-volume-level:before {
+	left:auto !important;
+}
