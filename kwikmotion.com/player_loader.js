@@ -1,5 +1,5 @@
 var KEY_ACCESS = "Iw=="; // #
-var ScriptPath = 'packages/'; // Plugins Path
+var ScriptPath = 'packages/'; // Plugins Path or URL
 
 var Design_Studio_Player_Options = {logo :   '',
 hideLogo :   '',
@@ -122,8 +122,8 @@ function kwikPlayer(id, options) {
   var scr = document.getElementById('scrmotionmain'), k;
   if(!scr){
     // scrip did not created yet
-    loadScriptKwikLink(ScriptPath + 'plugins_loader.php', function () {
-	// loadScriptKwikLink(ScriptPath + 'plugins_loader.js', function () {
+    loadScriptKwikLink(ScriptPath + 'plugins_loader_v2.js', function () {
+	// loadScriptKwikLink(ScriptPath + 'plugins_loader_v1.js', function () {
       k = new kwikMotionMain(id, options, KEY_ACCESS, ScriptPath, CustomCSSPath);
     });
     
