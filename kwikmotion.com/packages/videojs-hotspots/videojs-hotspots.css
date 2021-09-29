@@ -1,0 +1,363 @@
+[data-click]:not([data-click=""]),
+[data-close] {
+    cursor: pointer
+}
+
+.video-js.vjs-hotspot-editor {
+    display: block
+}
+
+.video-js.vjs-hotspot-editor .vjs-control-bar .vjs-hotspot-button {
+    cursor: pointer
+}
+
+.video-js.vjs-hotspot-editor .vjs-control-bar .vjs-hotspot-button .vjs-hotspot-ico svg {
+    fill: #fff;
+    width: 1.7em
+}
+
+.video-js.vjs-hotspot-editor .vjs-control-bar .vjs-hotspot-button .vjs-menu .vjs-menu-content {
+    right: 3em
+}
+
+.video-js.vjs-hotspot-editor .vjs-tech {
+    transition: .1s
+}
+
+.video-js.vjs-hotspot-editor .vjs-tech.modal-opened {
+    width: 70%
+}
+
+.video-js .vjs-hotspot {
+    position: absolute;
+    display: none
+}
+
+.video-js .vjs-hotspot.link,
+.video-js .vjs-hotspot.page {
+    cursor: pointer
+}
+
+.video-js .vjs-hotspot.html {
+    overflow: auto
+}
+
+.video-js .vjs-hotspot.html iframe {
+    width: 100%;
+    height: 99%
+}
+
+.video-js .vjs-hotspot.image img,
+.video-js .vjs-hotspot.text span,
+.video-js .vjs-hotspot.text textarea {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    background: transparent
+}
+
+.video-js .vjs-hotspot.text .hotspot-text-content,
+.video-js .vjs-hotspot.text .hotspot-text-editor {
+    overflow: hidden;
+    resize: none;
+    color: #fff;
+    font-size: 2em;
+    font-family: Open Sans
+}
+
+.video-js .vjs-hotspot.editor {
+    border: 1px dotted hsla(0, 0%, 100%, .4)
+}
+
+.video-js .vjs-hotspot .hotspot-title {
+    white-space: nowrap;
+    position: absolute;
+    top: -20px;
+    left: -2px;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #666;
+    padding: 2px 5px
+}
+
+.video-js .vjs-hotspot .hotspot-title.empty {
+    display: none
+}
+
+.video-js .vjs-hotspot .hotspot-edit:focus,
+.video-js .vjs-hotspot .hotspot-move:focus,
+.video-js .vjs-hotspot .hotspot-remove:focus {
+    outline-color: transparent
+}
+
+.video-js .vjs-hotspot .hotspot-edit,
+.video-js .vjs-hotspot .hotspot-move,
+.video-js .vjs-hotspot .hotspot-remove {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.4em;
+    padding: 2px;
+    color: orange;
+    cursor: pointer;
+    z-index: 1
+}
+
+.video-js .vjs-hotspot .hotspot-edit {
+    right: 20px
+}
+
+.video-js .vjs-hotspot .hotspot-move {
+    left: 12px;
+    bottom: 12px;
+    top: auto;
+    right: auto;
+    cursor: all-scroll
+}
+
+.video-js .vjs-hotspot i.hotspotfont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.video-js .hotspot-editor-modal-wrapper {
+    background: transparent
+}
+
+.video-js .hotspot-content-modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9)
+}
+
+.video-js .hotspot-editor-modal {
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll
+}
+
+.video-js .hotspot-editor-modal::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #f5f5f5
+}
+
+.video-js .hotspot-editor-modal::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f5f5f5
+}
+
+.video-js .hotspot-editor-modal::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555
+}
+
+.video-js .hotspot-editor-modal {
+    background-color: rgba(0, 0, 0, .7);
+    padding: 0 20px 30px
+}
+
+.video-js .hotspot-editor-modal>div>div {
+    clear: both;
+    margin-top: 20px;
+    display: inline-block;
+    width: 100%
+}
+
+.video-js .hotspot-editor-modal>div>div h3 {
+    margin: 0 0 5px
+}
+
+.video-js .hotspot-editor-modal .hotspot-save {
+    border: 1px solid #fff;
+    float: right;
+    margin: 10px;
+    cursor: pointer
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-slider {
+    width: 100%;
+    height: 20px
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-title {
+    width: 100%
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-type {
+    width: 30%
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-link {
+    width: 60%;
+    margin-left: 5%
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-slider-start {
+    float: left
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-slider-end {
+    float: right
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-border-container,
+.video-js .hotspot-editor-modal .hotspot-edit-ico-container {
+    display: none
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-border-container>div,
+.video-js .hotspot-editor-modal .hotspot-edit-ico-container>div {
+    width: 25%;
+    float: left
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-border-container>div input,
+.video-js .hotspot-editor-modal .hotspot-edit-border-container>div select,
+.video-js .hotspot-editor-modal .hotspot-edit-ico-container>div input,
+.video-js .hotspot-editor-modal .hotspot-edit-ico-container>div select {
+    max-width: 80%
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-text-container>div {
+    width: 15%;
+    float: left
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-text-container>div input,
+.video-js .hotspot-editor-modal .hotspot-edit-text-container>div select {
+    max-width: 100%
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-text-container>div.hotspot-edit-text {
+    width: 70%
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-ico input,
+.video-js .hotspot-editor-modal .hotspot-edit-ico label {
+    display: none
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-ico label {
+    font-size: 20px;
+    padding: 0 5px 5px;
+    cursor: pointer
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-ico label.mainfont-picker {
+    display: block;
+    width: 100%
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-ico input:checked~label {
+    display: block;
+    float: left
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-html-container .hotspot-edit-html-templates button {
+    margin: 10px;
+    border: 1px solid #fff;
+    padding: 3px;
+    border-radius: 6px;
+    font-size: 1.3em;
+    cursor: pointer
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-html-container .hotspot-edit-html-templates button:hover {
+    background-color: hsla(0, 0%, 100%, .3)
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-html-container .hotspot-edit-html-tab {
+    display: inline-block;
+    margin: 0 1%;
+    width: 48%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #555;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-html-container .hotspot-edit-html-tab.active {
+    background-color: #f5f5f5;
+    color: #000
+}
+
+.video-js .hotspot-editor-modal .hotspot-edit-html-container .hotspot-edit-html {
+    width: 100%
+}
+
+.video-js .hotspot-template-modal {
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    bottom: 60px;
+    padding: 10px;
+    left: 0;
+    right: 0
+}
+
+.video-js .hotspot-template-modal .het-se-head {
+    font-size: 1.4em;
+    padding: 20px
+}
+
+.video-js .hotspot-template-modal .het-se-code {
+    width: 100%
+}
+
+.video-js .hotspot-template-modal .het-pp-image,
+.video-js .hotspot-template-modal .het-pp-link,
+.video-js .hotspot-template-modal .het-pp-title {
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    height: 2em;
+    padding: 3px
+}
+
+.video-js .hotspot-template-save {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin: 20px 0;
+    padding: 5px 40px;
+    border: 1px solid #fff;
+    cursor: pointer
+}
+
+.video-js .hotspot-template-save:hover {
+    background-color: hsla(0, 0%, 100%, .3)
+}
+
+#font-picker {
+    max-width: 100%
+}
+
+#font-picker .dropdown-button,
+#font-picker ul {
+    background: #000;
+    width: 90%;
+    font-size: 1.3em
+}
+
+#font-picker .dropdown-button {
+    height: 20px
+}
+
+#font-picker .dropdown-icon:before {
+    border-top: 6px solid #fff
+}

@@ -1,0 +1,32 @@
+@font-face {
+	font-family: "hotspotfont";
+	src: url("app.hotspotfont.eot?1ff6f1f0bb40d41d82a62d944467c06d?#iefix") format("embedded-opentype"),
+url("app.hotspotfont.woff?1ff6f1f0bb40d41d82a62d944467c06d") format("woff"),
+url("app.hotspotfont.woff2?1ff6f1f0bb40d41d82a62d944467c06d") format("woff2"),
+url("app.hotspotfont.ttf?1ff6f1f0bb40d41d82a62d944467c06d") format("truetype"),
+url("app.hotspotfont.svg?1ff6f1f0bb40d41d82a62d944467c06d#hotspotfont") format("svg");
+}
+
+.hotspotfont {
+	line-height: 1;
+}
+
+.hotspotfont:before {
+	font-family: hotspotfont !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.hotspotfont-aim:before {
+	content: "\f101";
+}
+.hotspotfont-dissapointment:before {
+	content: "\f102";
+}
+.hotspotfont-photo-camera:before {
+	content: "\f103";
+}
+.hotspotfont-point:before {
+	content: "\f104";
+}
