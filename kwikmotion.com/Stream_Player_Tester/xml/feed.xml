@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<playlist>
+<title>Enter Playlist Title Here</title>
+<seasons>
+<season1>
+
+<episode1>
+<title>Enter Title Here</title>
+<image>Enter Image URL Here</image>
+<description>Enter Description Here</description>
+<url>Enter URL Here</url>
+</episode1>
+
+<episode2>
+<title>Enter Title Here</title>
+<image>Enter Image URL Here</image>
+<description>Enter Description Here</description>
+<url>Enter URL Here</url>
+</episode2>
+
+<episode3>
+<title>Enter Title Here</title>
+<image>Enter Image URL Here</image>
+<description>Enter Description Here</description>
+<url>Enter URL Here</url>
+</episode3>
+
+<episode4>
+<title>Enter Title Here</title>
+<image>Enter Image URL Here</image>
+<description>Enter Description Here</description>
+<url>Enter URL Here</url>
+</episode4>
+
+<episode5>
+<title>Enter Title Here</title>
+<image>Enter Image URL Here</image>
+<description>Enter Description Here</description>
+<url>Enter URL Here</url>
+</episode5>
+</season1>
+
+<season2>
+<episode1>
+<title>Enter Title Here</title>
+<image>Enter Image URL Here</image>
+<description>Enter Description Here</description>
+<url>Enter URL Here</url>
+</episode1>
+
+<episode2>
+<title>Enter Title Here</title>
+<image>Enter Image URL Here</image>
+<description>Enter Description Here</description>
+<url>Enter URL Here</url>
+</episode2>
+
+<episode3>
+<title>Enter Title Here</title>
+<image>Enter Image URL Here</image>
+<description>Enter Description Here</description>
+<url>Enter URL Here</url>
+</episode3>
+
+<episode4>
+<title>Enter Title Here</title>
+<image>Enter Image URL Here</image>
+<description>Enter Description Here</description>
+<url>Enter URL Here</url>
+</episode4>
+
+<episode5>
+<title>Enter Title Here</title>
+<image>Enter Image URL Here</image>
+<description>Enter Description Here</description>
+<url>Enter URL Here</url>
+</episode5>
+
+</season2>
+</seasons>
+</playlist>

@@ -1,0 +1,1 @@
+Configure player_loader.js at -> var ScriptPath = 'packages/'
