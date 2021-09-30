@@ -1,7 +1,6 @@
 ﻿/*
  * Video.js design studio 
  *
- * Copyright (c) 2017 Ahmad Awada
  * Licensed under the MIT license
  */
 (function (factory) {
