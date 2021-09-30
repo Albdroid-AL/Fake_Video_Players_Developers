@@ -1,6 +1,6 @@
 var KEY_ACCESS = "Iw=="; // #
 //var ScriptPath = 'ENTER FULL PATH OR URL TO /packages/ FOLDER'; // Plugins Path
-var ScriptPath = 'packages/';
+var ScriptPath = 'packages/'; // Enter Path or url to /packages/ Folder
 var Design_Studio_Player_Options = {logo :   '',
 hideLogo :   '',
 link :   '',
