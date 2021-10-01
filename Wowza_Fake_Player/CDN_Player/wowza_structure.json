@@ -1,0 +1,10 @@
+{
+  "title": "V2BEAT TV",
+  "image": "",
+  "live": true,
+  "live_done": false,
+  "countdown": false,
+  "countdown_timestamp": "",
+  "file": "https://abr.de1se01.v2beat.live/playlist.m3u8",
+  "sources": []
+}
