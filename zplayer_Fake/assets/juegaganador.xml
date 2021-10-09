@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="2.0">
+    <Ad id="ad1">
+        <InLine>
+            <AdSystem>JuegaGanador</AdSystem>
+            <AdTitle><![CDATA[Ad Title]]></AdTitle>
+            <Impression id="imp1"><![CDATA[https://juegaganador.com/conocenos/?utm_source=leros&utm_medium=banner&utm_campaign=banner&utm_id=leros]]></Impression>
+            <Creatives>
+                <Creative>
+                    <Linear>
+                        <Duration>00:00:05</Duration>
+                        <VideoClicks>
+                            <ClickThrough><![CDATA[https://juegaganador.com/conocenos/?utm_source=leros&utm_medium=banner&utm_campaign=banner&utm_id=leros]]></ClickThrough>
+                            <ClickTracking><![CDATA[https://juegaganador.com/conocenos/?utm_source=leros&utm_medium=banner&utm_campaign=banner&utm_id=leros]]></ClickTracking>
+                            <CustomClick><![CDATA[https://juegaganador.com/conocenos/?utm_source=leros&utm_medium=banner&utm_campaign=banner&utm_id=leros]]></CustomClick>
+                        </VideoClicks>
+                        <TrackingEvents>
+                            <Tracking event="start"><![CDATA[https://juegaganador.com/conocenos/?utm_source=leros&utm_medium=banner&utm_campaign=banner&utm_id=leros]]></Tracking>
+                            <Tracking event="pause"><![CDATA[https://juegaganador.com/conocenos/?utm_source=leros&utm_medium=banner&utm_campaign=banner&utm_id=leros]]></Tracking>
+                        </TrackingEvents>
+                        <MediaFiles>
+                             
+                            <MediaFile delivery="progressive" type="video/mp4" height="100" width="100" bitrate="2500">
+                                <![CDATA[https://juegaganador.com/wp-content/uploads/2021/08/La-Mejor-Pagina-Web-Para-Tus-Pronosticos-Deportivos_-Juega-Ganador.mp4]]>
+                            </MediaFile>
+                         
+                        </MediaFiles>
+                    </Linear>
+                </Creative>
+            </Creatives>
+        </InLine>
+    </Ad>
+</VAST>

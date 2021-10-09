@@ -1,0 +1,840 @@
+/*
+ @ Author: https://codecanyon.net/user/romeomihalovics
+ @ Version: 1.0
+ @ Last modified: 2019. 04. 23
+ @ License: Envato Market Standard License https://codecanyon.net/licenses/standard
+ @ You must use this file in way which does not violate the Envato Market Standard License terms!
+
+
+ Ã‚Â¤ 
+ Ã‚Â¤ JW Player 
+ Ã‚Â¤ Skin
+ Ã‚Â¤, .jw-skin-crispskin .jw-svg-icon-replay path, .jw-skin-crispskin .jw-svg-icon-rewind path
+*/
+
+/* Setting the default icon paths not displayed */
+.jw-skin-crispskin .jw-svg-icon-play path, .jw-skin-crispskin .jw-svg-icon-pause path, .jw-skin-crispskin .jw-icon-fullscreen path, .jw-skin-crispskin .jw-icon-next path, .jw-skin-crispskin .jw-icon-settings path, .jw-skin-crispskin .jw-icon-volume path {    
+    display: none;
+}
+
+/* Setting the inline, display icon sizes */
+.jw-skin-crispskin .jw-icon-inline, .jw-skin-crispskin .jw-display-icon-display .jw-reset, .jw-skin-crispskin .jw-display-icon-rewind .jw-reset, .jw-skin-crispskin .jw-display-icon-rewind .jw-next, .jw-skin-crispskin .jw-svg-icon-volume-0, .jw-skin-crispskin .jw-svg-icon-volume-50, .jw-skin-crispskin .jw-svg-icon-volume-100 {
+	height: 32px !important;
+	width: 40px !important;
+}
+
+/* Setting the live text width */
+.jw-skin-crispskin .jw-text-live {
+	width: auto;
+}
+
+/* Setting the control bar icon sizes */
+.jw-skin-crispskin .jw-svg-icon-play,.jw-skin-crispskin .jw-svg-icon-replay, .jw-skin-crispskin .jw-svg-icon-pause, .jw-skin-crispskin .jw-svg-icon-fullscreen-on, .jw-skin-crispskin .jw-svg-icon-fullscreen-off, .jw-skin-crispskin .jw-svg-icon-rewind, .jw-skin-crispskin .jw-svg-icon-next, .jw-skin-crispskin .jw-svg-icon-settings, .jw-skin-crispskin .jw-svg-icon-buffer, .jw-skin-crispskin .jw-svg-icon-volume-0, .jw-skin-crispskin .jw-svg-icon-volume-50, .jw-skin-crispskin .jw-svg-icon-volume-100 {
+	background-size: 16px;
+	background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Setting the filter transition for the control bar icons*/
+.jw-skin-crispskin .jw-icon-inline.jw-button-color, .jw-skin-crispskin .jw-icon-tooltip.jw-button-color {
+	transition: -webkit-filter .15s;
+	transition: filter .15s;
+	transition: filter .15s,-webkit-filter .15s;
+}
+
+/* Setting the filter on hover for the control bar icons*/
+.jw-skin-crispskin .jw-icon-inline.jw-button-color:hover svg, .jw-skin-crispskin .jw-icon-tooltip.jw-button-color:hover svg {
+	-webkit-filter: drop-shadow(0 0 8px #fff) !important;
+	filter: drop-shadow(0 0 8px white) !important;
+}
+
+/* Setting the bottom border opacity to 0 on hover for the control bar icons */
+.jw-skin-crispskin .jw-settings-menu .jw-icon[aria-checked="true"]::after,.jw-skin-crispskin .jw-settings-open .jw-icon-settings::after, .jw-skin-crispskin .jw-icon-volume.jw-open::after {
+	opacity: 0 !important;
+}
+
+/* Setting the icon svgs */
+.jw-skin-crispskin .jw-svg-icon-play {
+    background-image: url('../img/play.svg');
+}
+
+.jw-skin-crispskin .jw-svg-icon-replay {
+    background-image: url('../img/replay.svg');
+}
+
+.jw-skin-crispskin .jw-svg-icon-pause {
+    background-image: url('../img/pause.svg');
+}
+
+.jw-skin-crispskin .jw-svg-icon-fullscreen-on {
+    background-image: url('../img/fullscreen-on.svg');
+}
+
+.jw-skin-crispskin .jw-svg-icon-fullscreen-off {
+    background-image: url('../img/fullscreen-off.svg');
+}
+
+.jw-skin-crispskin .jw-svg-icon-rewind {
+    background-image: url('../img/rewind.svg');
+}
+
+.jw-skin-crispskin .jw-svg-icon-next {
+    background-image: url('../img/next.svg');
+}
+
+.jw-skin-crispskin .jw-icon-rewind, .jw-skin-crispskin .jw-icon-next {
+	display: none;
+}
+
+.jw-skin-crispskin .jw-svg-icon-settings {
+    background-image: url('../img/settings.svg');
+}
+
+.jw-skin-crispskin .jw-svg-icon-buffer {
+    background-image: url('../img/buffer.svg');
+}
+
+.jw-skin-crispskin .jw-svg-icon-cc-on, .jw-skin-crispskin .jw-svg-icon-cc-off {
+    background-image: url('../img/captions.svg');
+    height: 21px;
+}
+
+.jw-skin-crispskin .jw-svg-icon-volume-0 {
+    background-image: url('../img/volume-mute.svg');
+}
+
+.jw-skin-crispskin .jw-svg-icon-volume-50 {
+    background-image: url('../img/volume-low.svg');
+}
+
+.jw-skin-crispskin .jw-svg-icon-volume-100 {
+    background-image: url('../img/volume-high.svg');
+}
+/* / Setting the icon svgs / */
+
+/* Setting the display icon svg backgrounds, sizes, transition types, borders */
+.jw-skin-crispskin .jw-display-icon-display svg {
+    width: 60px !important;
+    height: 40px !important;
+    border-radius: 50px !important;
+    background-color: #ff0000;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: opacity .15s,border-radius .15s,background-size .15s,width .15s,height .15s;
+}
+
+.jw-skin-crispskin .jw-display-icon-rewind svg {
+	width: 32px !important;
+	height: 32px !important;
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.jw-skin-crispskin .jw-display-icon-next svg {
+	width: 32px !important;
+	height: 32px !important;
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/* / Setting the display icon svg backgrounds, sizes, transition types, borders / */
+
+/* Setting the buffer icon border radius 100% */
+.jw-skin-crispskin .jw-display-icon-display .jw-svg-icon-buffer {
+	border-radius: 100% !important;
+}
+
+/* Setting the control bar button colors to white */
+.jw-skin-crispskin .jw-controlbar .jw-icon.jw-button-color {
+	color:#fff;
+}
+
+/* Setting the duration text, tooltip bottoms, default control bar backdrop, ads time slider, ads tooltips (except volume, fullscreen, playback) to not be displayed */
+.jw-skin-crispskin .jw-text-duration, .jw-skin-crispskin .jw-time-tip::after, .jw-skin-crispskin .jw-controlbar .jw-tooltip::after, .jw-skin-crispskin .jw-settings-menu .jw-tooltip::after, .jw-skin-crispskin .jw-controls-backdrop, .jw-skin-crispskin.jwplayer.jw-flag-ads .jw-slider-time, .jw-skin-crispskin.jwplayer.jw-flag-ads .jw-controlbar .jw-tooltip, .jw-skin-crispskin.jwplayer.jw-flag-ads .jw-controlbar .jw-icon-tooltip:not(.jw-icon-volume), .jw-skin-crispskin.jwplayer.jw-flag-ads .jw-controlbar .jw-icon-inline:not(.jw-icon-playback):not(.jw-icon-fullscreen):not(.jw-icon-volume) {
+	display: none !important;
+}
+
+/* Setting elapsed text margin, countdown to be shown, and its margin */
+.jw-skin-crispskin .jw-text-elapsed {
+	margin-left: 5px;
+}
+
+.jw-skin-crispskin .jw-text-countdown {
+	display: flex !important;
+	margin-right: 25px;
+}
+/* / Setting elapsed text margin, countdown to be shown, and its margin / */
+
+/* Setting control bar padding */
+.jw-skin-crispskin .jw-controlbar {
+	padding-bottom:5px;
+}
+
+/* Setting time slider flex and padding */
+.jw-skin-crispskin .jw-slider-time {
+	flex: 0 100 auto;
+	padding-bottom: 3px;
+}
+
+/* Setting slider color */
+.jw-skin-crispskin .jw-progress {
+	background-color: #e53232;
+}
+
+/* Setting time slider, volume slider */
+.jw-skin-crispskin .jw-slider-time .jw-rail, .jw-skin-crispskin .jw-horizontal-volume-container .jw-rail, .jw-skin-crispskin .jw-slider-time .jw-buffer, .jw-skin-crispskin .jw-horizontal-volume-container .jw-buffer, .jw-skin-crispskin .jw-slider-time .jw-progress, .jw-skin-crispskin .jw-horizontal-volume-container .jw-progress, .jw-skin-crispskin .jw-slider-time .jw-cue, .jw-skin-crispskin .jw-horizontal-volume-container .jw-cue {
+	transform: none;
+	height: 2px;
+}
+
+.jw-skin-crispskin .jw-slider-time:hover .jw-rail, .jw-skin-crispskin .jw-horizontal-volume-container:hover .jw-rail, .jw-skin-crispskin .jw-slider-time:focus .jw-rail, .jw-skin-crispskin .jw-horizontal-volume-container:focus .jw-rail, .jw-skin-crispskin .jw-flag-dragging .jw-slider-time .jw-rail, .jw-skin-crispskin .jw-flag-dragging .jw-horizontal-volume-container .jw-rail, .jw-skin-crispskin .jw-flag-touch .jw-slider-time .jw-rail, .jw-skin-crispskin .jw-flag-touch .jw-horizontal-volume-container .jw-rail, .jw-skin-crispskin .jw-slider-time:hover .jw-buffer, .jw-skin-crispskin .jw-horizontal-volume-container:hover .jw-buffer, .jw-skin-crispskin .jw-slider-time:focus .jw-buffer, .jw-skin-crispskin .jw-horizontal-volume-container:focus .jw-buffer, .jw-skin-crispskin .jw-flag-dragging .jw-slider-time .jw-buffer, .jw-skin-crispskin .jw-flag-dragging .jw-horizontal-volume-container .jw-buffer, .jw-skin-crispskin .jw-flag-touch .jw-slider-time .jw-buffer, .jw-skin-crispskin .jw-flag-touch .jw-horizontal-volume-container .jw-buffer, .jw-skin-crispskin .jw-slider-time:hover .jw-progress, .jw-skin-crispskin .jw-horizontal-volume-container:hover .jw-progress, .jw-skin-crispskin .jw-slider-time:focus .jw-progress, .jw-skin-crispskin .jw-horizontal-volume-container:focus .jw-progress, .jw-skin-crispskin .jw-flag-dragging .jw-slider-time .jw-progress, .jw-skin-crispskin .jw-flag-dragging .jw-horizontal-volume-container .jw-progress, .jw-skin-crispskin .jw-flag-touch .jw-slider-time .jw-progress, .jw-skin-crispskin .jw-flag-touch .jw-horizontal-volume-container .jw-progress, .jw-skin-crispskin .jw-slider-time:hover .jw-cue, .jw-skin-crispskin .jw-horizontal-volume-container:hover .jw-cue, .jw-skin-crispskin .jw-slider-time:focus .jw-cue, .jw-skin-crispskin .jw-horizontal-volume-container:focus .jw-cue, .jw-skin-crispskin .jw-flag-dragging .jw-slider-time .jw-cue, .jw-skin-crispskin .jw-flag-dragging .jw-horizontal-volume-container .jw-cue, .jw-skin-crispskin .jw-flag-touch .jw-slider-time .jw-cue, .jw-skin-crispskin .jw-flag-touch .jw-horizontal-volume-container .jw-cue {
+	transform: none;
+}
+
+.jw-skin-crispskin .jw-slider-time .jw-knob {
+	background: hsla(0,0%,100%,.2);
+	-webkit-transform: translate(-50%, -50%) scale(1);
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.jw-skin-crispskin .jw-knob {
+	height: 10px;
+	width: 10px;
+	background: hsla(0,0%,100%,.2);
+	box-shadow: none;
+}
+
+.jw-skin-crispskin .jw-knob:after {
+	content: "";
+	position: absolute;
+	height: 2px;
+	width: 2px;
+	background: #fff;
+	border-radius: 50%;
+	right: 4px;
+	top: 4px;
+}
+
+.jw-skin-crispskin .jw-slider-vertical .jw-slider-container, .jw-skin-crispskin .jw-slider-vertical .jw-rail, .jw-skin-crispskin .jw-slider-vertical .jw-buffer, .jw-skin-crispskin .jw-slider-vertical .jw-progress {
+	width: 2px;
+}
+/* / Setting time slider, volume slider / */
+
+/* Setting tooltips */
+.jw-skin-crispskin .jw-time-tip .jw-text, .jw-skin-crispskin .jw-controlbar .jw-tooltip .jw-text, .jw-skin-crispskin .jw-settings-menu .jw-tooltip .jw-text {
+	background-color: transparent;
+	color: rgba(255,255,255,.8);
+}
+
+.jw-skin-crispskin .jw-time-tip, .jw-skin-crispskin .jw-controlbar .jw-tooltip, .jw-skin-crispskin .jw-settings-menu .jw-tooltip {
+	box-shadow: none;
+}
+/* Setting tooltips */
+
+/* Setting modals */
+.jw-skin-crispskin .jw-info-overlay, .jw-skin-crispskin .jw-shortcuts-tooltip {
+	background: rgba(0,0,0,.8) !important;
+}
+
+.jw-skin-crispskin.jwplayer .jw-rightclick .jw-rightclick-list .jw-rightclick-item {
+	border:none !important;
+}
+/* / Setting modals / */
+
+/* Setting control bar */
+.jw-skin-crispskin .jw-controlbar, .jw-skin-crispskin.jwplayer.jw-flag-ads .jw-controlbar {
+	height: 96px;
+	background: linear-gradient(0deg,rgba(0,0,0,.8),rgba(0,0,0,.4) 25%,rgba(0,0,0,.2) 50%,rgba(0,0,0,.1) 75%,transparent) !important;
+}
+
+.jw-skin-crispskin .jw-controlbar .jw-button-container {
+	position: absolute;
+	bottom:0;
+}
+/* / Setting control bar / */
+
+/* Setting the icon filters while ads playing to none by default, setting the buttons order */
+.jw-skin-crispskin.jwplayer.jw-flag-ads .jw-controlbar .jw-svg-icon {
+	filter:none !important;
+}
+
+.jw-skin-crispskin.jwplayer.jw-flag-ads .jw-text-alt {
+	order:0;
+}
+
+.jw-skin-crispskin.jwplayer.jw-flag-ads .jw-icon-volume {
+	order:2;
+}
+
+.jw-skin-crispskin.jwplayer.jw-flag-ads .jw-icon-fullscreen {
+	order:2;
+}
+/* / Setting the icon filters while ads playing to none by default, setting the buttons order / */
+
+/*
+ Ã‚Â¤ 
+ Ã‚Â¤ VideoJS 
+ Ã‚Â¤ Skin
+ Ã‚Â¤
+*/
+
+/* Setting the big play button and buffer */
+.video-js-crispskin .vjs-big-play-button {
+	width: 40px;
+	height: 40px;
+	border-radius: 50px;
+	border:none;
+	background-image: url("../img/play.svg");
+	background-color: rgba(0,0,0,.8);
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: opacity .15s,border-radius .15s,background-size .15s,width .15s,height .15s;
+	top: 50%;
+	left: 50%;
+	margin-top: -0.5em;
+	margin-left: -0.5em;
+}
+
+.video-js-crispskin .vjs-big-play-button:hover, .video-js-crispskin.video-js:hover .vjs-big-play-button, .video-js-crispskin.video-js .vjs-big-play-button:focus {
+	background-color: rgba(0,0,0,.8);
+}
+
+.video-js-crispskin .vjs-big-play-button .vjs-icon-placeholder:before {
+	content: "";
+    display: none;
+}
+
+.video-js-crispskin .vjs-loading-spinner {
+	width: 32px;
+	height: 32px;
+	border-radius: 100%;
+	border:none;
+	background-image: url("../img/buffer.svg");
+	background-color: rgba(0,0,0,.8);
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-animation:videojs-crispskin-spin 2s linear infinite !important;
+ 	animation:videojs-crispskin-spin 2s linear infinite !important;
+ 	visibility: visible !important;
+	transition: opacity .15s,border-radius .15s,background-size .15s,width .15s,height .15s;
+}
+
+.video-js-crispskin .vjs-loading-spinner:before {
+	content: "";
+    display: none;
+}
+
+.video-js-crispskin .vjs-loading-spinner:after {
+	content: "";
+    display: none;
+}
+
+@-webkit-keyframes videojs-crispskin-spin {
+ 100% {
+  -webkit-transform:rotate(360deg);
+  transform:rotate(360deg)
+ }
+}
+@keyframes videojs-crispskin-spin {
+ 100% {
+  -webkit-transform:rotate(360deg);
+  transform:rotate(360deg)
+ }
+}
+/* / Setting the big play button / */
+
+/* Setting the poster brightness */
+.video-js-crispskin .vjs-poster {
+	-webkit-filter: brightness(.6);
+	filter: brightness(.6);
+}
+
+/* Setting the current time to be displayed */
+.video-js-crispskin.video-js .vjs-current-time {
+	display: flex;
+}
+
+/* Setting the control bar */
+.video-js-crispskin .vjs-control-bar {
+	height: 60px;
+	background: linear-gradient(0deg,rgba(0,0,0,.8),rgba(0,0,0,.4) 25%,rgba(0,0,0,.2) 50%,rgba(0,0,0,.1) 75%,transparent) !important;
+	padding: 6px 12px;
+}
+
+.video-js-crispskin .vjs-control-bar > div, .video-js-crispskin .vjs-control-bar > button {
+    align-self: self-end !important;
+    height: 4em;
+}
+
+.video-js-crispskin .vjs-control-bar > div > button {
+	align-self: self-end !important;
+}
+
+.video-js-crispskin .vjs-control-bar > div > *, .video-js-crispskin .vjs-control-bar > button > * {
+	align-self: center;
+}
+
+.video-js-crispskin.video-js .vjs-time-control {
+	line-height: 4em;
+	padding-right: 0.5em;
+	padding-left: 0.5em;
+}
+
+.video-js-crispskin .vjs-current-time-display, .video-js-crispskin .vjs-remaining-time-display {
+	font-size: 1.5em;
+}
+
+.video-js-crispskin .vjs-remaining-time span:not(.vjs-control-text):not(.vjs-remaining-time-display) {
+	display: none;
+}
+
+.video-js-crispskin.video-js .vjs-volume-panel.vjs-volume-panel-vertical {
+	width: 32px !important;
+}
+/* / Setting the control bar / */
+
+/* Setting the icons */
+.video-js-crispskin .vjs-play-control, .video-js-crispskin .vjs-mute-control, .video-js-crispskin .vjs-fullscreen-control, .video-js-crispskin .vjs-subs-caps-button, .video-js-crispskin .vjs-audio-button, .video-js-crispskin .vjs-descriptions-button, .video-js-crispskin .vjs-chapters-button, .video-js-crispskin .vjs-playback-rate {
+	width: 32px !important;
+	height: 32px !important;
+	background-size: 55%;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: .5em;
+	transition: -webkit-filter .15s;
+	transition: filter .15s;
+	transition: filter .15s,-webkit-filter .15s;
+}
+
+.video-js-crispskin .vjs-play-control:hover, .video-js-crispskin .vjs-mute-control:hover, .video-js-crispskin .vjs-fullscreen-control:hover, .video-js-crispskin .vjs-subs-caps-button:hover button, .video-js-crispskin .vjs-audio-button:hover button, .video-js-crispskin .vjs-descriptions-button:hover button, .video-js-crispskin .vjs-chapters-button:hover button, .video-js-crispskin .vjs-playback-rate:hover .vjs-playback-rate-value {
+	-webkit-filter: drop-shadow(0 0 8px #fff) !important;
+	filter: drop-shadow(0 0 8px white) !important;
+}
+
+.video-js-crispskin .vjs-play-control .vjs-icon-placeholder:before, .video-js-crispskin .vjs-mute-control .vjs-icon-placeholder:before, .video-js-crispskin .vjs-fullscreen-control .vjs-icon-placeholder:before, .video-js-crispskin .vjs-subs-caps-button .vjs-icon-placeholder:before, .video-js-crispskin .vjs-audio-button .vjs-icon-placeholder:before, .video-js-crispskin .vjs-descriptions-button .vjs-icon-placeholder:before, .video-js-crispskin .vjs-chapters-button .vjs-icon-placeholder:before {
+	content: "";
+    display: none;
+}
+
+.video-js-crispskin .vjs-play-control.vjs-paused {
+	background-image:url("../img/play.svg");
+}
+
+.video-js-crispskin .vjs-play-control.vjs-playing {
+	background-image:url("../img/pause.svg");
+}
+
+.video-js-crispskin .vjs-mute-control.vjs-vol-0 {
+	background-image:url("../img/volume-mute.svg");
+}
+
+.video-js-crispskin .vjs-mute-control.vjs-vol-1, .video-js-crispskin .vjs-mute-control.vjs-vol-2 {
+	background-image:url("../img/volume-low.svg");
+}
+
+.video-js-crispskin .vjs-mute-control.vjs-vol-3 {
+	background-image:url("../img/volume-high.svg");
+}
+
+.video-js-crispskin .vjs-fullscreen-control[title="Fullscreen"] {
+	background-image:url("../img/fullscreen-on.svg");
+}
+
+.video-js-crispskin .vjs-fullscreen-control[title="Non-Fullscreen"] {
+	background-image:url("../img/fullscreen-off.svg");
+}
+
+.video-js-crispskin .vjs-subs-caps-button {
+	background-image:url("../img/captions.svg");
+}
+
+.video-js-crispskin .vjs-audio-button {
+	background-image:url("../img/headset.svg");
+}
+
+.video-js-crispskin .vjs-descriptions-button {
+	background-image:url("../img/hashtag.svg");
+}
+
+.video-js-crispskin .vjs-chapters-button {
+	background-image:url("../img/threelines.svg");
+}
+
+.video-js-crispskin .vjs-play-control.vjs-paused:hover, .video-js-crispskin.video-js .vjs-play-control.vjs-paused:focus {
+	background-color: transparent;
+}
+
+.video-js-crispskin .vjs-play-control.vjs-paused .vjs-icon-placeholder:before {
+	content: "";
+    display: none;
+}
+
+.video-js-crispskin .vjs-playback-rate .vjs-playback-rate-value {
+	line-height: 2.1em;
+}
+/* / Setting the icons / */
+
+/* Setting the time and volume slider */
+.video-js-crispskin .vjs-play-progress .vjs-time-tooltip {
+	display: none !important;
+}
+
+.video-js-crispskin .vjs-mouse-display, .video-js-crispskin .vjs-mouse-display .vjs-time-tooltip {
+	background-color: transparent !important;
+}
+
+.video-js-crispskin .vjs-load-progress {
+	background: rgba(255,255,255,0.4);
+}
+
+.video-js-crispskin.video-js .vjs-volume-panel .vjs-volume-control:hover.vjs-volume-vertical,  .video-js-crispskin.video-js .vjs-volume-panel .vjs-volume-control.vjs-volume-vertical {
+	left: -3em !important;
+}
+
+.video-js-crispskin.video-js .vjs-slider {
+	background-color: rgba(255,255,255,0.2);
+}
+
+.video-js-crispskin.video-js .vjs-play-progress, .video-js-crispskin .vjs-slider-vertical .vjs-volume-level {
+	background-color: #e53232;
+}
+
+.video-js-crispskin.video-js .vjs-progress-control .vjs-progress-holder {
+	height: 2px;
+}
+
+.video-js-crispskin.video-js .vjs-progress-control:hover .vjs-progress-holder {
+	height: 2px;
+}
+
+.video-js-crispskin .vjs-icon-circle:before, .video-js-crispskin.video-js .vjs-play-progress:before, .video-js-crispskin.video-js .vjs-volume-level:before, .video-js-crispskin .vjs-seek-to-live-control .vjs-icon-placeholder:before {
+	content: '';
+	height: 16px;
+	width: 16px;
+	background: hsla(0,0%,100%,.2);
+	box-shadow: none;
+	border-radius: 100%;
+	font-size: 1.6666666em !important;
+	margin-right: 1px;
+}
+
+.video-js-crispskin .vjs-icon-circle:after, .video-js-crispskin.video-js .vjs-play-progress:after, .video-js-crispskin.video-js .vjs-volume-level:after, .video-js-crispskin .vjs-seek-to-live-control .vjs-icon-placeholder:after {
+	content:'';
+	position: absolute;
+	height: 4px;
+	width: 4px;
+	background: #fff;
+	border-radius: 50%;
+	right: -2px;
+	top: -1px;
+}
+
+.video-js-crispskin.video-js .vjs-volume-level:before {
+	left: -7px;
+}
+
+.video-js-crispskin.video-js .vjs-volume-level:after {
+	right: -1px;
+	top:-2px;
+}
+
+
+.video-js-crispskin.video-js .vjs-progress-control:hover .vjs-progress-holder {
+	font-size: 1em !important;
+}
+
+.video-js-crispskin .vjs-slider-vertical .vjs-volume-level, .video-js-crispskin .vjs-volume-bar.vjs-slider-vertical {
+	width: 2px;
+	transition: 150ms cubic-bezier(0, .25, .25, 1);
+	transition-property: opacity, visibility;
+	transition-delay: 150s, 150ms;
+}
+
+.video-js-crispskin .vjs-volume-bar.vjs-slider-vertical {
+	height: 88px !important;
+}
+
+.video-js .vjs-volume-vertical {
+	background: transparent;
+	height: 127px !important;
+}
+
+.video-js-crispskin.video-js .vjs-progress-control:hover .vjs-time-tooltip {
+	font-size: 1em;
+}
+
+.video-js-crispskin.video-js .vjs-volume-panel .vjs-volume-control.vjs-volume-vertical {
+	transition: visibility 150ms, opacity 150ms, height 150ms 150ms, width 150ms 150ms, left 150ms 150ms, top 150ms 150ms;
+}
+/* / Setting the time slider / */
+
+/* Setting modals, pop ups */
+.video-js-crispskin.video-js .vjs-modal-dialog {
+	background: rgba(0,0,0,.4);
+}
+
+.video-js-crispskin .vjs-modal-dialog.vjs-text-track-settings {
+	background-color: rgba(0,0,0,.8);
+	width: 90%;
+	height: 75%;
+	margin: 3em;
+}
+
+.video-js-crispskin .vjs-default-button, .video-js-crispskin .vjs-done-button, .video-js-crispskin .vjs-default-button:focus, .video-js-crispskin .vjs-done-button:focus {
+	background-color: #e53232;
+	background-image: none;
+	color: #c3cad5;
+	transition: all 150ms linear;
+	padding:5px 15px;
+	border: none;
+	border-radius: 5px;
+}
+
+.video-js-crispskin .vjs-default-button:hover, .video-js-crispskin .vjs-done-button:hover {
+	color: #fff;
+}
+
+.video-js-crispskin.video-js .vjs-control.vjs-close-button {
+	color:#e53232;
+}
+
+.video-js-crispskin .vjs-menu-button-popup .vjs-menu .vjs-menu-content {
+	background-color:rgba(0,0,0,.6);
+}
+
+.video-js-crispskin .vjs-menu li.vjs-selected, .video-js-crispskin .vjs-menu li.vjs-selected:focus, .video-js-crispskin .vjs-menu li.vjs-selected:hover, .video-js-crispskin .js-focus-visible .vjs-menu li.vjs-selected:hover {
+	background-color: rgba(229, 50, 50,.8);
+	color: #fff;
+}
+
+.video-js-crispskin .vjs-menu li.vjs-menu-item:focus, .video-js-crispskin .vjs-menu li.vjs-menu-item:hover, .video-js-crispskin .js-focus-visible .vjs-menu li.vjs-menu-item:hover {
+	background-color: rgb(0, 0, 0);
+}
+/* / Setting modals / */
+
+/*
+ Ã‚Â¤ 
+ Ã‚Â¤ MediaElementJS
+ Ã‚Â¤ Skin
+ Ã‚Â¤
+*/
+
+/* Setting big play button and buffer */
+.mejs__crispskin .mejs__overlay-play {
+	background: rgba(0,0,0,.4);
+}
+
+.mejs__crispskin .mejs__overlay-play .mejs__overlay-button {
+	width: 32px;
+	height: 32px;
+	border-radius: 2px;
+	border:none;
+	background-image: url("../img/play.svg");
+	background-color: rgba(0,0,0,.8);
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: opacity .15s,border-radius .15s,background-size .15s,width .15s,height .15s;
+}
+
+.mejs__crispskin .mejs__overlay-loading {
+	width: 32px;
+	height: 32px;
+}
+
+.mejs__crispskin .mejs__overlay-loading .mejs__overlay-loading-bg-img {
+	width: 32px;
+	height: 32px;
+	border-radius: 100%;
+	border:none;
+	background-image: url("../img/buffer.svg");
+	background-color: rgba(0,0,0,.8);
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-animation:mejs__crispskin-spin 2s linear infinite !important;
+ 	animation:mejs__crispskin-spin 2s linear infinite !important;
+	transition: opacity .15s,border-radius .15s,background-size .15s,width .15s,height .15s;
+}
+
+@-webkit-keyframes mejs__crispskin-spin {
+ 100% {
+  -webkit-transform:rotate(360deg);
+  transform:rotate(360deg)
+ }
+}
+@keyframes mejs__crispskin-spin {
+ 100% {
+  -webkit-transform:rotate(360deg);
+  transform:rotate(360deg)
+ }
+}
+/* / Setting big play button and buffer / */
+
+/* Setting control bar icons */
+.mejs__crispskin .mejs__button button {
+	background-size: 89% !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+}
+
+.mejs__crispskin .mejs__button button {
+	transition: -webkit-filter .15s;
+	transition: filter .15s;
+	transition: filter .15s,-webkit-filter .15s;
+}
+
+.mejs__crispskin .mejs__button:hover button {
+	-webkit-filter: drop-shadow(0 0 8px #fff) !important;
+	filter: drop-shadow(0 0 8px white) !important;
+}
+
+.mejs__crispskin .mejs__playpause-button.mejs__play button, .mejs__crispskin .mejs__playpause-button.mejs__replay button {
+	background:url("../img/play.svg");
+}
+
+.mejs__crispskin .mejs__playpause-button.mejs__pause button {
+	background:url("../img/pause.svg");	
+}
+
+.mejs__crispskin .mejs__volume-button.mejs__mute button {
+	background:url("../img/volume-high.svg");
+}
+
+.mejs__crispskin .mejs__volume-button.mejs__unmute button {
+	background:url("../img/volume-mute.svg");
+}
+
+.mejs__crispskin .mejs__fullscreen-button button, .mejs__crispskin .mejs__fullscreen-button.mejs__fullscreen button {
+	background:url("../img/fullscreen-on.svg");
+}
+
+.mejs__crispskin .mejs__fullscreen-button.mejs__unfullscreen button {
+	background:url("../img/fullscreen-off.svg");
+}
+
+.mejs__crispskin .mejs__captions-button button {
+	background:url("../img/captions.svg");
+}
+/* / Setting control bar icons / */
+
+/* Setting control bar, sliders */
+.mejs__crispskin .mejs__controls {
+	height: 96px;
+	background: linear-gradient(0deg,rgba(0,0,0,.8),rgba(0,0,0,.4) 25%,rgba(0,0,0,.2) 50%,rgba(0,0,0,.1) 75%,transparent) !important;
+}
+
+.mejs__crispskin .mejs__controls > div {
+	align-self: self-end;
+}
+
+.mejs__crispskin .mejs__button > button {
+	margin: 6px 6px;
+}
+
+.mejs__crispskin .mejs__time {
+	font-weight: normal;
+	font-size: 12px;
+	padding: 11px 6px 5px;
+}
+
+.mejs__crispskin .mejs__time-rail {
+	padding-top:0px;
+}
+
+.mejs__crispskin .mejs__time-total {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	background: linear-gradient(transparent 45%, rgba(255,255,255,.2) 60%, transparent 50%);
+}
+
+.mejs__crispskin .mejs__time-total, .mejs__crispskin .mejs__time-buffering, .mejs__crispskin .mejs__time-loaded, .mejs__crispskin .mejs__time-current, .mejs__crispskin .mejs__time-hovered, .mejs__crispskin .mejs__time-float-current, .mejs__crispskin .mejs__time-float-corner, .mejs__crispskin .mejs__time-marker {
+	height: 2px;
+}
+
+.mejs__crispskin .mejs__time-handle-content {
+	border-color: hsla(0,0%,100%,.2);
+	border-width: 8px;
+	left: -10px;
+	top: -12px;
+	background: transparent;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+
+.mejs__crispskin .mejs__time-handle-content:after {
+	content: "";
+	position: absolute;
+	height: 4px;
+	width: 4px;
+	background: #fff;
+	border-radius: 50%;
+	right: -2px;
+	top: -2px;
+}
+
+.mejs__crispskin .mejs__time-current {
+	background: rgb(229, 50, 50);
+}
+
+.mejs__crispskin .mejs__time-loaded {
+	background: rgba(255, 255, 255, 0.4);
+}
+
+.mejs__crispskin .mejs__time-buffering {
+	display: none !important;
+}
+
+.mejs__crispskin .mejs__time-hovered {
+	display: none !important;
+}
+
+.mejs__crispskin .mejs__time-float {
+	border:none;
+	background: transparent;
+	color:#fff;
+}
+
+.mejs__crispskin .mejs__time-float-corner {
+	display: none !important;
+}
+
+.mejs__crispskin .mejs__volume-button > .mejs__volume-slider {
+	background: transparent;
+	height: 127px;
+}
+
+.mejs__crispskin .mejs__volume-total {
+	background: rgba(255,255,255,.3);
+	height: 88px;
+}
+
+.mejs__crispskin .mejs__volume-current {
+	background: rgb(229, 50, 50);
+}
+
+.mejs__crispskin .mejs__volume-handle {
+	cursor: pointer;
+	height: 16px;
+	width: 16px;
+	background: rgba(255, 255, 255, 0.2);
+	margin-bottom: -8px;
+	border-radius: 50%;
+}
+
+.mejs__crispskin .mejs__volume-handle:after {
+	content: "";
+	position: absolute;
+	height: 4px;
+	width: 4px;
+	background: #fff;
+	border-radius: 50%;
+	right: 6px;
+	top: 6px;
+}
+/* / Setting control bar, sliders / */
